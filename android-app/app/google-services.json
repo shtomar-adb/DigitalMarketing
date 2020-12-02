@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "824162522420",
+    "firebase_url": "https://cloudproject-71d5d.firebaseio.com",
+    "project_id": "cloudproject-71d5d",
+    "storage_bucket": "cloudproject-71d5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824162522420:android:3292580c0d2300e8588161",
+        "android_client_info": {
+          "package_name": "com.app.cloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824162522420-ghbj4i1k09dvoe8cpep9hpo52egdldon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBqnKXsQ2SPoUnsB-dS1Tw4vvYmkN-ZX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824162522420-ghbj4i1k09dvoe8cpep9hpo52egdldon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
