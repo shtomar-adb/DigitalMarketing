@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Digital Marketing - Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <h2>Digital Marketing Admin Portal</h2>
+    <hr style="border: 1px solid black;" />
+    <h4>Welcome <span th:utext="${userName}"></span>!</h4>
+</div>
+<h5>Manage Segments</h5>
+<div class="container">
+    <h6>List of Segments</h6>
+
+    <table border="1px">
+
+        <div class="alert alert-success" role="alert" th:if="${msg}" th:utext="${msg}"/>
+        <tr>
+            <th>Segment Id</th>
+            <th>Segment Name</th>
+            <th>Segment Description</th>
+            <th>Update Segment</th>
+        </tr>
+        <tr th:each="segment : ${segments}">
+            <td th:text="${segment.id}"/>
+            <td th:text="${segment.name}"/>
+            <td th:text="${segment.description}"/>
+            <td> <a th:href="@{/segments/update/} + ${segment.id}" th:text="Update"/></td>
+        </tr>
+
+    </table>
+</div>
+
+<span><a th:href="@{/home/home}">Home</a> | <a th:href="@{/home/run-campaigns}">Run Campaigns</a> | <a th:href="@{/home/segments}">Segments</a> | <a th:href="@{/home/campaigns}">Manage Campaigns</a> | <a th:href="@{/logout}">Sign out</a></span>
+
+</body>
+</html>

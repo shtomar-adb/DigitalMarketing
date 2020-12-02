@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Digital Marketing - Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <h2>Digital Marketing Admin Portal</h2>
+    <hr style="border: 1px solid black;" />
+    <h4>Welcome <span th:utext="${userName}"></span>!</h4>
+</div>
+<h5>Run Campaigns</h5>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4 mt-5">
+            <form method="post" th:action="@{/campaigns/run-campaigns}" th:object="${run}">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="alert alert-success" role="alert" th:if="${msg}" th:utext="${msg}">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="segment">Choose Segment</label>
+                    <select name="segmentId" class="form-control selectpicker" th:field="*{segment}" id="segment">
+                        <option value="">Nothing selected</option>
+                        <option th:each="segment : ${segments}"
+                                th:value="${segment.id}"
+                                th:text="${segment.name}">
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="campaign">Select Campaign</label>
+                    <select name="campaignId" class="form-control selectpicker" th:field="*{campaign}" id="campaign">
+                        <option value="">Nothing selected</option>
+                        <option th:each="campaign : ${campaigns}"
+                                th:value="${campaign.id}"
+                                th:text="${campaign.name}">
+                        </option>
+
+                    </select>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Run Campaign</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<span><a th:href="@{/home/home}">Home</a> | <a th:href="@{/home/run-campaigns}">Run Campaigns</a> | <a th:href="@{/home/segments}">Segments</a> | <a th:href="@{/home/campaigns}">Manage Campaigns</a> | <a th:href="@{/logout}">Sign out</a></span>
+
+</body>
+</html>

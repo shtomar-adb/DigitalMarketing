@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Digital Marketing - Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <h2>Digital Marketing Admin Portal</h2>
+    <hr style="border: 1px solid black;" />
+    <h4>Welcome <span th:utext="${userName}"></span>!</h4>
+</div>
+<h5>Manage Campaigns</h5>
+<div>
+    <ul>
+        <li><a th:href="@{/campaigns}">View Campaigns</a></li>
+        <li><a th:href="@{/campaigns/create}">Create Campaign</a></li>
+        <li><a th:href="@{/home/run-campaigns}">Run Campaigns</a></li>
+    </ul>
+</div>
+
+<span><a th:href="@{/home/home}">Home</a> | <a th:href="@{/home/run-campaigns}">Run Campaigns</a> | <a th:href="@{/home/segments}">Segments</a> | <a th:href="@{/home/campaigns}">Manage Campaigns</a> | <a th:href="@{/logout}">Sign out</a></span>
+
+</body>
+</html>
