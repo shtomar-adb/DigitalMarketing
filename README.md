@@ -73,6 +73,18 @@ The mobile app will have the following features:
 ## Code implementation
    Code implementation has been done using Android sdk and Firebase console for push notification. AWS services has been integrated to provide features like user authentication and authorization and storing user data into Dynamo DB.
    
+## Admin Portal
+
+The admin will have the following functionalities on this portal: 
+
+1. View List of Users
+2. View and Update Segments
+3. View and Create Campaigns
+4. Trigger a run of a campaign against a segment
+
+Test User: john@msn.com
+Password: Dec@2020
+   
 ## Push Notification
 
 1. Query the DB with Campaign_id & Segment_id
