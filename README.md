@@ -6,7 +6,7 @@
 ## Student: 
 ## Anupama Kurudi -
 ## Gunjan Srivastava - https://www.linkedin.com/in/gunjan-android
-## Babu Rajendran -
+## Babu Rajendran - https://www.linkedin.com/in/baburajendran
 ## Shivam Tomar - 
 ## Project Introduction:
 
@@ -84,6 +84,9 @@ The admin will have the following functionalities on this portal:
 
 Test User: john@msn.com
 Password: Dec@2020
+
+## Code implementation
+   Admin Portal is implemented using Spring Boot as the backend and it uses Thymeleaf templates and Bootstrap for the user interface. Auth information of the users of the admin portal is stored in an Amazon RDS instance. Dynamo DB is used to retrieve the user data and create and manage campaigns and segments. The portal is deployed on Amazon Elastic Beanstalk.
    
 ## Push Notification
 
