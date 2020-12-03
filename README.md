@@ -1,7 +1,6 @@
 # DigitalMarketing
 
-
-
+University Name: http://www.sjsu.edu/     Course: Cloud Technologies    Professor Sanjay Garje (This is link to LinkedIn Profile)    Student: {Please insert your name and link to LinkedIn Profile}    Project Introduction (What the application does, feature list)    Sample Demo Screenshots    Pre-requisites Set Upo   Here includes bullet point list of resources one need to configure in their cloud account. (E.g. For AWS: S3 buckets, CloudFront etc.)o   List of required software to download locally (E.g. Spring, JDK, Eclipse IDE etc.)o   Local configuration     How to set up and run project locally?o   Here include quick steps on how to compile and run your project on local machine (whichever you used, Mac or Windows either one).  
 
 
 
