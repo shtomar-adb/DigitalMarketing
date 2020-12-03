@@ -2,12 +2,12 @@
 
 ## University Name: http://www.sjsu.edu/ 
 ## Course: Cloud Technologies
-## Professor Sanjay Garje (This is link to LinkedIn Profile)
+## Professor Sanjay Garje https://www.linkedin.com/in/sanjaygarje 
 ## Student: 
 ## Anupama Kurudi -
-## Gunjan Srivastava -
+## Gunjan Srivastava - https://www.linkedin.com/in/gunjan-android
 ## Babu Rajendran -
-## Shivam Tomar
+## Shivam Tomar - 
 ## Project Introduction:
 
 Create an Android App to capture relevant user data. Using this data, relevant campaigns are run, to have more reach on the targeted users. Users respond to the campaigns and their responses are saved, on which data analytics is performed to understand how the campaign faired. This complete picture allows companies running their digital marketing campaigns to have a better understanding on how they can improve their campaigns.
@@ -63,8 +63,16 @@ Here, with the help of the information the user has entered, generate more relev
 
 ## Android App
 
-## Code implementation
+The mobile app will have the following features:
 
+1. Users can register and login into the app using Amazon Cognito.
+2. App integrated with the Firebase Console to receive push notifications related to marketing campaigns.
+3. App integrated with Amazon DynamoDB to push user profile data and device token as an new entry
+4. Users can respond to the campaign by selecting Interested/Not-interested from the app UI.
+5. Users' responses will be sent to the Api Gateway using Volley RequestQueue.
+## Code implementation
+   Code implementation has been done using Android sdk and Firebase console for push notification. AWS services has been integrated to provide features like user authentication and authorization and storing user data into Dynamo DB.
+   
 ## Push Notification
 
 1. Query the DB with Campaign_id & Segment_id
