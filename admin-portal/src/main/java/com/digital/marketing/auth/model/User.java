@@ -15,6 +15,7 @@ import javax.persistence.Table;
 import java.util.Set;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "user")
 public class User {
