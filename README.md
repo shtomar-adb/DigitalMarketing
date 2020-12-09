@@ -7,7 +7,7 @@
 ## Anupama Kurudi -
 ## Gunjan Srivastava - https://www.linkedin.com/in/gunjan-android
 ## Babu Rajendran - https://www.linkedin.com/in/baburajendran
-## Shivam Tomar - 
+## Shivam Tomar - [LinkedIn](https://www.linkedin.com/in/shivam-tomar/)
 ## Project Introduction:
 
 Create an Android App to capture relevant user data. Using this data, relevant campaigns are run, to have more reach on the targeted users. Users respond to the campaigns and their responses are saved, on which data analytics is performed to understand how the campaign faired. This complete picture allows companies running their digital marketing campaigns to have a better understanding on how they can improve their campaigns.
